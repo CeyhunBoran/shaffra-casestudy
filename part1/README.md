@@ -83,19 +83,15 @@ While there isn't a pre-generated documentation folder, you can use Postman to d
 
 ## API Endpoints
 
-### GET /users
-- Description: Get all users
-- Response: List of user objects
+### POST /users
+- Description: Create a new user
+- Request Body: User object
+- Response: Created user object
 
 ### GET /users/{id}
 - Description: Get user by ID
 - Path Parameter: id (UUID)
 - Response: User object
-
-### POST /users
-- Description: Create a new user
-- Request Body: User object
-- Response: Created user object
 
 ### PUT /users/{id}
 - Description: Update existing user
