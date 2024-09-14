@@ -9,8 +9,8 @@ This project implements a REST API using Go and PostgreSQL. It follows best prac
 - [Running the Application](#running-the-application)
 - [Running Tests](#running-tests)
 - [Environment Variables](#environment-variables)
+- [Using Postman for API Documentation](#using-postman-for-api-documentation)
 - [API Endpoints](#api-endpoints)
-- [Contributing](#contributing)
 
 ## Prerequisites
 
@@ -81,6 +81,7 @@ The application uses environment variables for configuration. You can set them i
 
 While there isn't a pre-generated documentation folder, you can use Postman to document API endpoints:
 
+## API Endpoints
 
 ### GET /users
 - Description: Get all users
