@@ -6,10 +6,10 @@ This repository contains my solutions to the Shaffra skills assessment.
 ## Assessment Parts
 
 ### Part 1: [Link to Part 1 README](https://github.com/CeyhunBoran/shaffra-casestudy/blob/main/part1/README.md)
-- Brief description of Part 1
+- GoLang Problem-Solving Task
 
 ### Part 2: [Link to Part 2 README](https://github.com/CeyhunBoran/shaffra-casestudy/blob/main/part2/README.md)
-- Brief description of Part 2
+- Debugging and Problem-Solving
 
 ### Part 3: [Link to Part 3 README](Part3/README.md)
-- Brief description of Part 3
+- Systems Design and Architecture
