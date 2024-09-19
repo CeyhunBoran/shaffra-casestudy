@@ -20,9 +20,23 @@ func NewDB(connectionString string) (*DB, error) {
 	conn.SetMaxOpenConns(25)
 	conn.SetMaxIdleConns(25)
 	conn.SetConnMaxLifetime(time.Hour)
-	conn.Exec("CREATE EXTENSION IF NOT EXISTS \"uuid-ossp\";")
 
 	err = conn.Ping()
+	if err != nil {
+		return nil, err
+	}
+
+	conn.Exec("CREATE EXTENSION IF NOT EXISTS \"uuid-ossp\";")
+
+	// Create user table
+	_, err = conn.Exec(`
+		CREATE TABLE IF NOT EXISTS users (
+			"id" UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+			"name" text NOT NULL,
+			email text NOT NULL,
+			age INT NOT NULL
+		);
+	`)
 	if err != nil {
 		return nil, err
 	}
